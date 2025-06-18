@@ -6,7 +6,7 @@
 }
 @font-face {
     font-family: myfont;
-    src: url(/assets/fonts/Cocogoose-Pro-Semilight-trial.ttf);
+    src: url(/assets/fonts/Poppins-Medium.ttf);
 }
 /* header */
 header{
@@ -19,7 +19,6 @@ header{
 header ul{
     display: flex;
     list-style-type: none;
-
 }
 header a{
     color: white;
@@ -40,15 +39,191 @@ header a:hover{
     
 }
 /* header */
-/* ------------------------------------ */
+/* ------------------------------------*/
 
-/* main */
+/* main 1 */
 main div{
     height: 600px;
 }
-/* main */
-/* ------------------------------------ */
+section.slider{
+    height: 700px;
+    font-family: myfont;
+    color: white;
+}
+/* we are taking article first child because we are doing it for 1st article only for now i.e carribean */
+section.slider article:first-child{     
+background-image: url(/assets/images/banner-01.jpg);
+height: inherit;   /* we can also write 100%*/
+background-size: cover;
+text-align: center;
+}
+section.slider article aside:first-child{
+padding: 8%;
+display: flex;
+flex-direction: column;
+gap: 27px;
+align-items: center;
+}
+section.slider article aside:first-child h2{
+    font-size: 3em;
+}
+section.slider article aside:first-child p{
+    font-size: 22px;
+}
+section.slider article aside:first-child a{
+    color: #22b2c0;
+    border: 1px solid  #22b2c0;
+    border-radius: 30px;
+    padding: 15px 30px;
+    width: fit-content;
+    font-size: 14px;
+}
+section.slider article  aside:first-child a:hover{
+    background-color: #22b2c0;
+    color: white;
+    transition: all .5s;
+}
+/* aside 2  */
+section.slider article  aside:nth-child(2){
+    background-color: white;
+    border-radius: 80px;
+    padding: 30px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 0px 150px;
+}
 
+section.slider article  aside:nth-child(2) div.slider-box4{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+section.slider article  aside:nth-child(2) div{
+    display: flex;
+    gap: 15px;
+}
+/* icons */
+section.slider article  aside:nth-child(2) div p:first-child{
+    border: 1px solid #22b2c0;
+    color: #22b2c0;
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+section.slider article  aside:nth-child(2) div p:last-child{
+    flex-grow: 1;
+    text-align: left;
+    display: grid;
+    color: gray;
+    font-size: 16px;
+}
+section.slider article  aside:nth-child(2) div p:last-child span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section.slider article  aside:nth-child(2) div p:last-child span b{
+    color: #22b2c0;
+}
+section.slider article  aside:nth-child(2) div.slider-box4 a{
+    background-color: #22b2c0;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 40px;
+}
+section.slider article  aside:nth-child(2) div.slider-box4 a:hover{
+    background-color: #22b3c0b1;
+}
+/* -------------------------------------- */
+/* main 2 */
+.visit{
+    background-color: #232223;
+    padding: 8%;
+    font-family: myfont;
+}
+.visit aside:first-child{
+    color: azure;
+    width: 40%;
+    
+}
+.visit aside:first-child h2{
+    padding: 30px 0px;
+    font-size: 30px;
+}
+.visit aside:first-child p{
+    font-size: 18px;
+    padding-bottom: 30px ;
+}
+.visit aside:last-child{
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    gap: 70px;
+}
+.visit aside:last-child article:first-child{
+    /* background-color: antiquewhite;  */
+    /* left side of map */
+    color: whitesmoke;
+}
+.visit aside:last-child article:first-child .block1{
+    /* background-color: aquamarine; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 25px;
+    border-bottom: 1px solid whitesmoke;
+    padding: 30px 0px;
+}
+.visit aside:last-child article:first-child .block1 .part1 img{
+    width: 100%;
+    border-radius: 5%;
+}
+.visit aside:last-child article:first-child .block1 .part2 .row1{
+display: flex;
+justify-content: space-between;
+}
+.visit aside:last-child article:first-child .block1 .part2 .row1 a{
+    background-color: #22b2c0;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 40px;   
+}
+.visit aside:last-child article:first-child .block1 .part2 .row1 p{
+    width: 25%;
+}
+.visit aside:last-child article:first-child .block1 .part2 .row2 p{
+    margin: 20px  0px;
+    padding: 20px 0px;
+    border-bottom: 1px solid whitesmoke;
+}
+.visit aside:last-child article:first-child .block1 .part2 .row3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 20px;
+}
+.visit aside:last-child article:first-child .block1 .part2 .row3 span{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.visit aside:last-child article:first-child .block1 .part2 .row4 a{
+    display: block;
+    margin-top: 20px;
+    color: #22b2c0;
+}
+.visit aside:last-child article:first-child .block1:last-child{
+    border-bottom: none;
+}
+/* end of main */
+/* ------------------------------------ */
 /* footer */
 footer{
     color: white;
