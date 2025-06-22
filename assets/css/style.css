@@ -315,4 +315,36 @@ gap: 30px;
     padding: 10px 20px;
 
 }
-/* about page end */
+/*------------------------------ about page end----------------------------- */
+
+/* deals */
+.deals-main .banner{
+    height: 80vh;
+    font-family: myfont;
+    background-image: url("../images/banner-01.jpg");
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.deals-main .banner .banner-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.deals-main .banner .banner-content a{
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+.deals-main .banner .banner-content a:hover{
+    background-color: #22b2c0;
+    border-color: #22b2c0;
+}
+/* deals page end */
+
