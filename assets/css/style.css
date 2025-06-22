@@ -268,5 +268,51 @@ footer a:hover{
    padding: 35px;
     background-color:#22b2c0 ;
 }
-/* footer */
+/* footer end*/
+/*----------------------------------- home end -----------------------------------*/
 
+/* about page start */
+body{
+    background-image: url('../images/about-content-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.about-main{
+    height: 70vh;
+    color: white;
+    font-family: myfont;
+    width: 80%;
+    margin: 10% auto;
+    position: relative;
+    
+}
+.about-main .blur{
+    /* filter: blur(8px) brightness(80%); for blurring div */ 
+    background-color: rgba(10, 10, 10, 0.1);
+    backdrop-filter: blur(8px);        
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.about-main .abt-content{
+position: absolute;
+top: 0px;
+left: 0px;
+padding: 8% 16%;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 30px;
+}
+.about-main .abt-content h1{
+    font-size: 50px;
+}
+.about-main .abt-content a{
+    background-color: white;
+    color: #22b2c0;
+    border-radius: 50px;
+    padding: 10px 20px;
+
+}
+/* about page end */
