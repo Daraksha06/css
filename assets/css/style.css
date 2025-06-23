@@ -278,7 +278,7 @@ body{
     background-size: 100% 100%;
     background-attachment: fixed;
 }
-.about-main{
+.about-main1{
     height: 70vh;
     color: white;
     font-family: myfont;
@@ -287,7 +287,7 @@ body{
     position: relative;
     
 }
-.about-main .blur{
+.about-main1 .blur{
     /* filter: blur(8px) brightness(80%); for blurring div */ 
     background-color: rgba(10, 10, 10, 0.1);
     backdrop-filter: blur(8px);        
@@ -295,7 +295,7 @@ body{
     width: 100%;
     border-radius: 20px;
 }
-.about-main .abt-content{
+.about-main1 .abt-content{
 position: absolute;
 top: 0px;
 left: 0px;
@@ -305,19 +305,76 @@ flex-direction: column;
 align-items: center;
 gap: 30px;
 }
-.about-main .abt-content h1{
+.about-main1 .abt-content h1{
     font-size: 50px;
 }
-.about-main .abt-content a{
+.about-main1 .abt-content a{
     background-color: white;
     color: #22b2c0;
     border-radius: 50px;
     padding: 10px 20px;
 
 }
+/* ------------------ */
+.abt-main2{
+ background-color: #232223; 
+ color: white;
+font-family: myfont;
+padding: 7% 10%;
+}
+.abt-main2 .abt-cards1{
+    background-color: white; 
+    padding: 5%;
+    border-radius: 20px;  
+    position: relative;
+    top: -160px;
+    
+}
+.abt-main2 .abt-cards1 .heading{
+    font-size: 22px;
+    margin-bottom: 3%;
+    color: black;
+}
+.abt-main2 .abt-cards1 .heading span{
+    color: #22b2c0;
+}
+.abt-main2 .abt-cards1 .cardimages{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+.abt-main2 .abt-cards1 .cardimages .image{
+    border-radius: 20px;
+    position: relative;
+}
+.abt-main2 .abt-cards1 .cardimages .image img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+.abt-main2 .abt-cards1 .cardimages .image h4{
+    font-size: 20px;
+    position: absolute;
+    bottom: 25px;
+    left: 23px;
+}
+/* -------------- */
+.abt-mid{
+    text-align: center;
+}
+.abt-mid h2{
+    font-size: 30px;
+}
+.abt-mid p{
+    width: 50%;
+    font-size: 20px;
+    margin: 1% auto;
+}
+/* ----------------- */
+
 /*------------------------------ about page end----------------------------- */
 
-/* deals */
+/* deals page start  */
 .deals-main .banner{
     height: 80vh;
     font-family: myfont;
@@ -346,5 +403,7 @@ gap: 30px;
     background-color: #22b2c0;
     border-color: #22b2c0;
 }
-/* deals page end */
+
+
+/* -----------deals page end-----------------------------*/
 
