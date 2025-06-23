@@ -313,22 +313,20 @@ gap: 30px;
     color: #22b2c0;
     border-radius: 50px;
     padding: 10px 20px;
-
 }
 /* ------------------ */
 .abt-main2{
- background-color: #232223; 
- color: white;
-font-family: myfont;
-padding: 7% 10%;
+    background-color: #232223; 
+    color: white;
+    font-family: myfont;
+    padding: 7% 10%;
 }
 .abt-main2 .abt-cards1{
     background-color: white; 
     padding: 5%;
     border-radius: 20px;  
     position: relative;
-    top: -160px;
-    
+    top: -160px; 
 }
 .abt-main2 .abt-cards1 .heading{
     font-size: 22px;
@@ -371,6 +369,81 @@ padding: 7% 10%;
     margin: 1% auto;
 }
 /* ----------------- */
+.abt-cards2{
+    margin-top: 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+.abt-cards2 aside{
+    position: relative;
+}
+.abt-cards2 article:first-child{     /*article firstchild--> img , 2nd child--> white card*/
+     border-radius: 25px 0px 0px 25px;
+     width: 65%;
+     height: 350px;
+     overflow: hidden;
+}
+.abt-cards2 article:first-child img{
+width: 100%;
+height: 100%;
+}
+.abt-cards2 article:last-child{
+    position: absolute;
+    top: 30px;
+    left: 130px ;
+    background-color: white;
+    padding: 25px;
+    width: 65%;
+    height: 200px;
+    border-radius: 25px;
+     color: black;
+     height: 350px;
+    
+}
+.abt-cards2 article:last-child .part1 .sub1{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.abt-cards2 article:last-child .part1 .sub1 p{
+    color: #22b2c0;
+}
+.abt-cards2 article:last-child .part1 .sub2{
+    color: grey;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.abt-cards2 article:last-child .part1{
+    border-bottom: 1px solid rgb(169, 167, 167);
+    padding-bottom: 23px;
+}
+.abt-cards2 article:last-child .part2{
+    font-size: 14px;
+     color: grey;
+     margin-top: 15px;
+    }
+    .abt-cards2 article:last-child .part2 p {
+        padding: 4px;
+    }
+.abt-cards2 article:last-child .part2 p i{
+    margin-right: 5px;
+    
+}
+.abt-cards2 article:last-child .part2 p:first-child{
+    color: black;
+}
+.abt-cards2 article:last-child .part3 a{
+    background-color: #22b2c0;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    display: inline-block;
+    margin-top: 20px;
+    }
 
 /*------------------------------ about page end----------------------------- */
 
