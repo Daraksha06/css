@@ -314,7 +314,7 @@ gap: 30px;
     border-radius: 50px;
     padding: 10px 20px;
 }
-/* ------------------ */
+/* ---------end of abt-main 1--------- */
 .abt-main2{
     background-color: #232223; 
     color: white;
@@ -444,13 +444,99 @@ height: 100%;
     border-radius: 40px;
     /* display: inline-block; */ 
     }
-    .abt-cards2 article:last-child .part3{
+.abt-cards2 article:last-child .part3{
            margin-top: 40px;
     }
 .abt-cards2 article:last-child .part3 a:hover{
     background-color: #22b3c0bf;
 }
-/* ----------------------------- */
+/* ---------------- */
+.abt-end{
+    margin: 10% auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+    margin-bottom: 2%;
+}
+.abt-end a i{
+    background-color: transparent;
+    color: #22b2c0;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #22b2c0;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    align-content: center;
+}
+.abt-end a i:hover{
+    background-color: #22b2c0;
+    color: white;
+}
+/* -------------end of abt-main 2---------------- */
+
+.abt-main3{
+    background-color: #232223;
+    padding: 8% 7%;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 60px;
+    font-family: myfont;
+    border-bottom: 2px solid white;
+}
+.abt-main3 section:first-child{
+    width: 100%;
+    align-content: center;
+}
+.abt-main3 section:nth-child(2) h2{
+    color: rgb(97, 99, 100);
+    font-size: 28px;
+}
+.abt-main3 section:nth-child(2) p{
+    margin: 40px 0px;
+    line-height: 28px;
+    color: aliceblue;
+}
+.abt-main3 section:nth-child(2) .box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.abt-main3 section:nth-child(2) .box div{
+    background-color: white;
+    padding: 8%  ;
+    align-items: center;
+    border-radius: 20px;
+}
+.abt-main3 section:nth-child(2) .box div h4{
+    font-size: 20px;
+}
+.abt-main3 section:nth-child(2) .box div span{
+    color: #22b2c0;
+}
+.abt-main3 section:nth-child(2) .box div:last-child{
+    grid-column: 1/3;
+    display: flex;
+    padding: 4%;
+    justify-content: space-between;
+    position: relative;
+}
+.abt-main3 section:nth-child(2) .box div:last-child aside:last-child{
+    position:absolute;
+    top: 25.5%;
+    left: 51%;
+}
+.abt-main3 section:nth-child(2) a{
+     background-color: #22b2c0;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 40px;  
+}
+/* ------------------end of abt-main 3----------------- */
+
+
 .abt-main4{
     background-color: #232223;
     padding: 8% 25%;
