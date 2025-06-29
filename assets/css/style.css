@@ -15,6 +15,10 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 23;
 }
 header ul{
     display: flex;
@@ -242,7 +246,8 @@ footer a:hover{
     justify-content: space-between;
     color: white;
     font-family: calibri;
-     background-color: #2bafc3b1;
+    background-image:  linear-gradient(rgba(0, 183, 229, 0.6), rgba(0, 183, 229, 0.6)),url("../images/banner-01.jpg");
+    background-position: 0% 65%;
 }
 .foot1 h2{
  font-size: 50px;
@@ -781,6 +786,37 @@ height: 100%;
 .deals4 div .part2 aside:nth-child(3) a:hover{
         background-color: white;
          color: #22b2c0;
+}
+/* -------------------end of deals 4----------------------- */
+.deals5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 6% ;
+}
+.deals5 a {
+    color: #22b2c0;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #22b2c0;
+    border-radius: 50%;
+    font-size: 20px;
+    display: flex;                
+    align-items: center;          
+    justify-content: center;      
+}
+.deals5 a:nth-child(3),.deals5 a:nth-child(2):hover, .deals5 a:nth-child(4):hover{
+    background-color: #22b2c0;
+    color: white;
+}
+.deals5 a:nth-child(1), .deals5 a:nth-child(5){
+    border: none;
+}
+.deals5 a:nth-child(1):hover, .deals5 a:nth-child(5):hover{
+     border: 1px solid #22b2c0;
+    background-color: #22b2c0;
+    color: white;
 }
 /* -----------deals page end-----------------------------*/
 
