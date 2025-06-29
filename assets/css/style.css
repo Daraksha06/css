@@ -820,3 +820,98 @@ height: 100%;
 }
 /* -----------deals page end-----------------------------*/
 
+.reservation-main{
+    font-family: myfont;
+    color: white;
+}
+.reservation-main .res1{
+    height: 100vh;
+    background-image: url("../images/reservations-bg-02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    position: relative;
+}
+.reservation-main .res1 p:first-child{
+    margin-top: 10%;
+    font-size: 24px;
+    padding: 20px;
+    
+}
+.reservation-main .res1 .r-active{
+    border-bottom: 2px solid #afafaf;
+    color: transparent;
+    position: absolute;
+    top: 215px;
+    left: 45%;
+}
+.reservation-main .res1 h1{
+    padding: 1%;
+    font-size: 52px;
+    font-weight: 800;
+}
+.reservation-main .res1 .myp{
+    width: 63%;
+    display: inline-block;
+    text-align: center;
+}
+.reservation-main .res1 a{
+    margin-top: 20px;
+    color: #22b2c0;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px 24px;
+    text-align: center;
+}
+.reservation-main .res1 a:hover{
+    background-color: #22b2c0;
+    color: white;
+}
+/* ------------------end of res 1--------------------- */
+.reservation-main .res2{
+   background-color: #232223;
+     color: black;
+}
+.reservation-main .res2 .rescards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    padding:0px 8% ;
+    position: relative;
+    top: -98px;
+}
+.reservation-main .res2 .rescards div{
+    background-color: white;
+    width: 100%;
+    border-radius: 35px;
+    padding: 30px 0px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+.reservation-main .res2 .rescards div a{
+    background-color: #f0f0f0;
+    color: #22b2c0;
+    font-size: 22px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reservation-main .res2 .rescards div h5{
+    font-size: 22px;
+}
+.reservation-main .res2 .rescards div p{
+    color: #22b2c0;
+}
+/* reservations page ends  */
+
