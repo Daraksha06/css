@@ -62,7 +62,7 @@ section.slider{
 }
 /* we are taking article first child because we are doing it for 1st article only for now i.e carribean */
 section.slider article:first-child{     
-background-image: url(/assets/images/banner-01.jpg);
+background-image: url(../images/banner-01.jpg);
 height: inherit;   /* we can also write 100%*/
 background-size: cover;
 text-align: center;
