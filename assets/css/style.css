@@ -1,4 +1,10 @@
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 *{
+    
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -88,7 +94,8 @@ section.slider article  aside:first-child a:hover{
     transition: all .5s;
 }
 /* aside 2  */
-section.slider article  aside:nth-child(2){
+
+/* section.slider article  aside:nth-child(2) {
     background-color: white;
     border-radius: 80px;
     padding: 30px 40px;
@@ -96,7 +103,21 @@ section.slider article  aside:nth-child(2){
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
     margin: 0px 150px;
+    overflow: hidden;
+} */
+section.slider article aside:nth-child(2) {
+    background-color: white;
+    border-radius: 80px;
+    padding: 30px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
 }
+
 
 section.slider article  aside:nth-child(2) div.slider-box4{
     display: flex;
@@ -490,6 +511,7 @@ height: 100%;
     font-family: myfont;
     border-bottom: 2px solid white;
 }
+
 .abt-main3 section:first-child{
     width: 100%;
     align-content: center;
@@ -980,7 +1002,7 @@ height: 100%;
     border: 1px solid #c8c6c6;
     outline: none;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 17px;
 }
 .res3  article .resform form input:focus , .res3  article .resform form select:focus{
     border: 2px solid black;
@@ -988,4 +1010,605 @@ height: 100%;
 
 
 /* reservations page ends  */
+/* responsive */
+@media (max-width: 768px) {
+    section.slider article  aside:nth-child(2) {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        border-radius: 30px;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+
+    section.slider article aside:nth-child(2) {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        border-radius: 40px;
+        margin: 20px;
+    }
+
+    section.slider article aside:nth-child(2) .slider-box1,
+    section.slider article aside:nth-child(2) .slider-box4 {
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.slider article aside:nth-child(2) div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    section.slider article aside:nth-child(2) div p:last-child {
+        text-align: center;
+    }
+
+
+    /* Stack the two asides (text + boxes) vertically */
+    section.slider article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.slider article aside:first-child {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    section.slider article aside:nth-child(2) {
+        grid-template-columns: 1fr;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    section.slider article aside:nth-child(2) .slider-box4 {
+        justify-content: center;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 5%;
+    }
+
+    header .menu ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .foot1 {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .visit aside:last-child {
+        grid-template-columns: 1fr;
+    }
+
+    .visit aside:last-child .block1 {
+        grid-template-columns: 1fr;
+    }
+
+    .visit aside:first-child {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    iframe {
+        height: 300px;
+    }
+    .menu, .active {
+    display: none !important;
+}
+
+}
+/* ========== Responsive for tablets and below ========== */
+@media (max-width: 1024px) {
+  .abt-main3 {
+    grid-template-columns: 1fr; /* Stack vertically */
+    padding: 6% 5%;
+    gap: 40px;
+  }
+
+  .abt-main3 section:nth-child(2) {
+    text-align: center;
+  }
+
+  .abt-main3 section:nth-child(2) .box {
+    grid-template-columns: 1fr; /* Stack boxes vertically */
+  }
+
+  .abt-main3 section:nth-child(2) .box div:last-child {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .abt-main3 section:nth-child(2) .box div:last-child aside:last-child {
+    position: static; /* Remove absolute positioning on small screens */
+    margin-top: 20px;
+  }
+}
+
+/* ========== Mobile screens (phones, 600px and below) ========== */
+@media (max-width: 600px) {
+  .abt-main3 {
+    padding: 5% 4%;
+    gap: 30px;
+  }
+
+  .abt-main3 section img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .abt-main3 section:nth-child(2) h2 {
+    font-size: 22px;
+  }
+
+  .abt-main3 section:nth-child(2) p {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 30px 0;
+  }
+
+  .abt-main3 section:nth-child(2) .box div {
+    padding: 6%;
+  }
+
+  .abt-main3 section:nth-child(2) .box div h4 {
+    font-size: 18px;
+  }
+
+  .abt-main3 section:nth-child(2) a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+/* ========== Tablets (max-width: 1024px) ========== */
+@media (max-width: 1024px) {
+  .abt-main2 {
+    padding: 6% 5%;
+  }
+
+  .abt-main2 .abt-cards1 {
+    top: -100px;
+    padding: 4%;
+  }
+
+  .abt-main2 .abt-cards1 .cardimages {
+    grid-template-columns: 1fr 1fr; /* 2 columns instead of 4 */
+    gap: 20px;
+  }
+
+  .abt-mid h2 {
+    font-size: 26px;
+  }
+
+  .abt-mid p {
+    width: 70%;
+    font-size: 18px;
+  }
+
+  .abt-cards2 {
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    gap: 30px;
+  }
+
+  .abt-cards2 article:first-child,
+  .abt-cards2 article:last-child {
+    width: 100%;
+    position: static;
+  }
+
+  .abt-cards2 aside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* ========== Mobile (max-width: 600px) ========== */
+@media (max-width: 600px) {
+  .abt-main2 {
+    padding: 5% 3%;
+  }
+
+  .abt-main2 .abt-cards1 {
+    top: -60px;
+    padding: 4%;
+  }
+
+  .abt-main2 .abt-cards1 .heading {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .abt-main2 .abt-cards1 .cardimages {
+    grid-template-columns: 1fr; /* stack images vertically */
+  }
+
+  .abt-main2 .abt-cards1 .cardimages .image h4 {
+    font-size: 16px;
+    left: 16px;
+    bottom: 16px;
+  }
+
+  .abt-mid h2 {
+    font-size: 22px;
+  }
+
+  .abt-mid p {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .abt-cards2 {
+    grid-template-columns: 1fr; /* stack cards */
+    gap: 25px;
+  }
+
+  .abt-cards2 aside {
+    flex-direction: column;
+  }
+
+  .abt-cards2 article:first-child,
+  .abt-cards2 article:last-child {
+    width: 100%;
+    height: auto;
+    position: static;
+  }
+
+  .abt-cards2 article:last-child {
+    padding: 20px;
+    height: auto;
+  }
+
+  .abt-cards2 article:last-child .part1 .sub1,
+  .abt-cards2 article:last-child .part1 .sub2 {
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+
+  .abt-cards2 article:last-child .part3 {
+    text-align: center;
+  }
+
+  .abt-end {
+    margin-top: 12%;
+  }
+
+  .abt-end a i {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+  }
+}
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .deals4 {
+    grid-template-columns: 1fr; /* stack vertically */
+    margin: 0 4%;
+  }
+
+  .deals4 div {
+    grid-template-columns: 1fr; /* stack image above text */
+  }
+
+  .deals4 div .part1 img {
+    border-radius: 40px 40px 0 0;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .deals4 div .part2 {
+    padding: 8% 6%;
+  }
+
+  .deals4 div .part2 aside:nth-child(2) {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}
+
+/* Mobile devices (max-width: 600px) */
+@media (max-width: 600px) {
+  .deals4 {
+    gap: 15px;
+  }
+
+  .deals4 div .part2 {
+    padding: 10% 8%;
+  }
+
+  .deals4 div .part2 aside:first-child p {
+    font-size: 16px;
+  }
+
+  .deals4 div .part2 aside:first-child h4 {
+    font-size: 18px;
+    padding: 15px 0;
+  }
+
+  .deals4 div .part2 aside:nth-child(2) {
+    font-size: 14px;
+  }
+
+  .deals4 div .part2 aside:nth-child(3) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .deals4 div .part2 aside:nth-child(3) a {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+    .deals-main .banner {
+        height: auto;
+        padding: 60px 20px;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+    }
+
+    .deals-main .banner .banner-content h2 {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .deals-main .banner .banner-content h4 {
+        font-size: 16px;
+    }
+
+    .deals-main .banner .banner-content a {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .deals-main .banner .banner-content h2 {
+        font-size: 28px;
+    }
+
+    .deals-main .banner .banner-content h4 {
+        font-size: 14px;
+    }
+
+    .deals-main .banner .banner-content a {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+}
+/* Mobile Devices (up to 600px) */
+@media only screen and (max-width: 600px) {
+  .deals3 h3 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .deals3 p {
+    width: 90%;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+/* Tablets (600px - 900px) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .deals3 h3 {
+    font-size: 28px;
+  }
+
+  .deals3 p {
+    width: 70%;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .deals2 > div {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .deals2 > div div:nth-child(1) {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .deals2 > div div:nth-child(2),
+  .deals2 > div div:nth-child(3) {
+    width: 100%;
+  }
+
+  .deals2 > div div:nth-child(2) ul li,
+  .deals2 > div div:nth-child(3) ul li {
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .deals2 > div div:nth-child(2) ul li ol,
+  .deals2 > div div:nth-child(3) ul li ol {
+    top: 45px;
+    z-index: 1;
+  }
+
+  .deals2 > div div:nth-child(4) {
+    text-align: center;
+  }
+
+  .deals2 > div div:nth-child(4) button {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .deals2 {
+    padding: 5% 4%;
+  }
+
+  .deals2 > div div:nth-child(1) {
+    font-size: 18px;
+  }
+
+  .deals2 > div div:nth-child(4) button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+    .reservation-main .res1 {
+        height: auto;
+        padding: 40px 20px;
+        gap: 15px;
+        background-position: center;
+    }
+
+    .reservation-main .res1 p:first-child {
+        font-size: 18px;
+        margin-top: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .reservation-main .res1 .r-active {
+        top: 165px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 14px;
+    }
+
+    .reservation-main .res1 h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .reservation-main .res1 .myp {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .reservation-main .res1 a {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .reservation-main .res1 h1 {
+        font-size: 26px;
+    }
+
+    .reservation-main .res1 .r-active {
+        top: 150px;
+        font-size: 12px;
+    }
+}
+/* Responsive layout for res2 section */
+
+@media (max-width: 1024px) {
+  .reservation-main .res2 .rescards {
+    grid-template-columns: 1fr 1fr;
+    top: -60px;
+    padding: 0px 6%;
+  }
+}
+
+@media (max-width: 768px) {
+  .reservation-main .res2 .rescards {
+    grid-template-columns: 1fr;
+    top: -40px;
+    padding: 0px 4%;
+  }
+
+  .reservation-main .res2 .rescards div {
+    padding: 25px 20px;
+  }
+
+  .reservation-main .res2 .rescards div h5 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .reservation-main .res2 .rescards div p {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .reservation-main .res2 .rescards div a {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+/* ---------- Responsive for res3 section ---------- */
+@media (max-width: 992px) {
+  .res3 article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .res3 article .resform {
+    padding: 6% 6%;
+  }
+
+  .res3 article .resform h4 {
+    font-size: 26px;
+    padding: 2%;
+  }
+
+  .res3 article .resform form {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .res3 article .resform form div:nth-child(5),
+  .res3 article .resform form button {
+    grid-column: auto;
+  }
+
+  .res3 article .resform form button {
+    height: auto;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .res3 {
+    padding: 0px 4%;
+  }
+
+  .res3 article .resform h4 {
+    font-size: 22px;
+  }
+
+  .res3 article .resform form input,
+  .res3 article .resform form select {
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  .res3 article .resform form label {
+    font-size: 16px;
+  }
+
+  .res3 article .resform form {
+    gap: 20px;
+  }
+}
+
 
