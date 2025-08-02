@@ -1007,7 +1007,7 @@ height: 100%;
 .res3  article .resform form input:focus , .res3  article .resform form select:focus{
     border: 2px solid black;
 }
-
+/*-------------------------------------------------------------------  */
 
 /* reservations page ends  */
 /* responsive */
@@ -1104,7 +1104,7 @@ height: 100%;
     iframe {
         height: 300px;
     }
-    .menu, .active {
+     .active {
     display: none !important;
 }
 
